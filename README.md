@@ -12,7 +12,8 @@ Angular component is the combination of template(UI), class (properties+methods)
 
 ``` import {Component} from "@angular/core";
 @Component({
-	
+	selector:'pm-root',
+	template:'component.html'
 })
 export class AppComponent{
 	pageTitle:string = 'My First Component';
