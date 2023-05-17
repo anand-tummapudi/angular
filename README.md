@@ -9,14 +9,15 @@ Angular is a javascript/typescript based framework to develop client side applic
 #### 2. What is Angular compinent?
 Angular component is the combination of template(UI), class (properties+methods) and Meta data.
 ![Angular Component](https://github.com/anand-tummapudi/angular/blob/main/assets/images/angular_component.JPG)
-```
-import {Component} from "@angular/core";
+
+``` import {Component} from "@angular/core";
 @Component({
 	
 })
 export class AppComponent{
 	pageTitle:string = 'My First Component';
-}```
+}
+```
 #### 3. What is Typescript?
 * Is the language used for angular development. This is the superset of javascript.
 * Type script transpiles to plain javascript. This language is strongly typed.
