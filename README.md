@@ -39,4 +39,6 @@ Java script is the language for web.
 	- Arrow functions.
 newer script will be transpiled into old javascript code.
 #### 5. Angular Features
-* **Angular1 ** Angular1 is called as AngularJS is developed using javascript.It provides framework for client-side MVC and MVVM architectures, along with components commonly used in rich internet applications.
+* **Angular1**: Angular1 is called as AngularJS is developed using javascript.It provides framework for client-side MVC and MVVM architectures, along with components commonly used in rich internet applications.
+* **Angular2**: Angular2 is complete rewrite of frmework using typescript. It is built with mobile device support where as angular1 is not supported by mobile devices.We can use any of the language ES5,ES6, Typescript or dart to write angular2 code.
+
