@@ -43,18 +43,18 @@ newer script will be transpiled into old javascript code.
 #### 6. Angular Lifecycle hooks
 After your application instantiates a component or directive by calling its constructor, angular calls the hook methods you have implemented at the appropriate point in the lifecycle of that instance.
 
-	* ngOnChanges() - respond when angular sets or reset data bound input properties. This method receives a SipleChanges object of current and previous property value. It is called before ngOnInit() and whenever one or more data bound input properties change.
+* ngOnChanges() - respond when angular sets or reset data bound input properties. This method receives a SipleChanges object of current and previous property value. It is called before ngOnInit() and whenever one or more data bound input properties change.
 	
-	* ngOnInit() - Initialize the directive or component after angular first displays the data bound propertiesand sets the directive or components inputproperties.It is called, once after the first ngOnChanges. It will be called, even when ngOnchanges is not called.
+* ngOnInit() - Initialize the directive or component after angular first displays the data bound propertiesand sets the directive or components inputproperties.It is called, once after the first ngOnChanges. It will be called, even when ngOnchanges is not called.
 	
-	* ngDoCheck() - Detect and act upon changes that angular can't or won't detect on its own. Called mmediately after ngOnChanges() on every change detection run, and immediately after ngOnInit() on the first run.
+* ngDoCheck() - Detect and act upon changes that angular can't or won't detect on its own. Called mmediately after ngOnChanges() on every change detection run, and immediately after ngOnInit() on the first run.
 	
-	* ngAfterContentInit() - respond after angular projectgs external content into into the components view, or into the view that a directive is in.  Called once after the first ngDocheck(). 
+* ngAfterContentInit() - respond after angular projectgs external content into into the components view, or into the view that a directive is in.  Called once after the first ngDocheck(). 
 	
-	* ngAfterContentChecked() - Respond after angular checks the content projected into the directive or component.Called after ngAfterContentInit() and every subsequent ngDoCheck().
+* ngAfterContentChecked() - Respond after angular checks the content projected into the directive or component.Called after ngAfterContentInit() and every subsequent ngDoCheck().
 	
-	* ngAfterViewInit() - Respond after angular initializes the component's views and child views or the view that contains the directive. Called once after the first ngAfterContentChecked().
+* ngAfterViewInit() - Respond after angular initializes the component's views and child views or the view that contains the directive. Called once after the first ngAfterContentChecked().
 	
-	* ngAfterViewChecked() - Respond after angular checks the component's views and child viewsor the view that contains the directive. Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().
+* ngAfterViewChecked() - Respond after angular checks the component's views and child viewsor the view that contains the directive. Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().
 	
-	* ngOnDestroy() - clean up just before angular destroys the component or directive. Unsubscribe observables and detach event handlers to avoid memory leaks. Called immediately before angular destorys the directive or component.
+* ngOnDestroy() - clean up just before angular destroys the component or directive. Unsubscribe observables and detach event handlers to avoid memory leaks. Called immediately before angular destorys the directive or component.
