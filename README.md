@@ -6,20 +6,7 @@ Angular is a javascript/typescript based framework to develop client side applic
 * It supports powerful data binding.
 * Angular supports modularity.
 * Angular has built-in support for integrating with backend.
-#### 2. What is Angular component?
-Angular component is the combination of template(UI), class (properties+methods) and Meta data.
-![Angular Component](https://github.com/anand-tummapudi/angular/blob/main/assets/images/angular_component.JPG)
-
-``` import {Component} from "@angular/core";
-@Component({
-	selector:'app-root',
-	template:'component.html'
-})
-export class AppComponent{
-	pageTitle:string = 'My First Component';
-}
-```
-#### 3. What is Typescript?
+#### 2. What is Typescript?
 * Is the language used for angular development. This is the superset of javascript.
 * Type script transpiles to plain javascript. This language is strongly typed.
 	JavaScript is a loosely typed language. It can be difficult to understand what types of data are being passed around in JavaScript.
@@ -28,7 +15,7 @@ export class AppComponent{
 
 For example, TypeScript will report an error when passing a string into a function that expects a number. JavaScript will not.
 * Typescript uses ES6.
-#### 4. What is Javascript?
+#### 3. What is Javascript?
 Java script is the language for web.
 * ECMAScript(ES)
 * ES 3/5 
@@ -37,10 +24,10 @@ Java script is the language for web.
 	- Classes
 	- Arrow functions.
 newer script will be transpiled into old javascript code.
-#### 5. Angular Features
+#### 4. Angular Features
 * **Angular1**: Angular1 is called as AngularJS is developed using javascript.It provides framework for client-side MVC and MVVM architectures, along with components commonly used in rich internet applications.
 * **Angular2**: Angular2 is complete rewrite of frmework using typescript. It is built with mobile device support where as angular1 is not supported by mobile devices.We can use any of the language ES5,ES6, Typescript or dart to write angular2 code.
-#### 6. Angular Lifecycle hooks
+#### 5. Angular Lifecycle hooks
 After your application instantiates a component or directive by calling its constructor, angular calls the hook methods you have implemented at the appropriate point in the lifecycle of that instance.
 
 * ngOnChanges() - respond when angular sets or reset data bound input properties. This method receives a SipleChanges object of current and previous property value. It is called before ngOnInit() and whenever one or more data bound input properties change.
@@ -58,3 +45,23 @@ After your application instantiates a component or directive by calling its cons
 * ngAfterViewChecked() - Respond after angular checks the component's views and child viewsor the view that contains the directive. Called after the ngAfterViewInit() and every subsequent ngAfterContentChecked().
 	
 * ngOnDestroy() - clean up just before angular destroys the component or directive. Unsubscribe observables and detach event handlers to avoid memory leaks. Called immediately before angular destorys the directive or component.
+
+#### 6. What is Angular component?
+The componentis the main building block of angular application. Angular component is the combination of template(UI), class (properties+methods) and Meta data.
+![Angular Component](https://github.com/anand-tummapudi/angular/blob/main/assets/images/angular_component.JPG)
+
+``` import {Component} from "@angular/core";
+@Component({
+	selector:'app-root',
+	template:'component.html'
+})
+export class AppComponent{
+	pageTitle:string = 'My First Component';
+}
+```
+
+#### 7. Angular Directives
+The angular directives helps us to manipulate the DOM. You can change a DOM element's appearance, behavior or layout using the directives. The angular directives are classified into 3 categories based on how they behave. They are component, Structural and attribute directives.
+
+#### 8. Angular Pipes
+The angular pipes are used to transform the data. We can pass arguments to pipe and chain pipes. Angular also allows to create custom pipes.
