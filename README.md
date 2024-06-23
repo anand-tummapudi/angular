@@ -14,6 +14,8 @@ Angular is a javascript/typescript based framework to develop client side applic
 	TypeScript allows specifying the types of data being passed around within the code, and has the ability to report errors when the types don't match.
 
 For example, TypeScript will report an error when passing a string into a function that expects a number. JavaScript will not.
+- By default access modifier in typescript is public. if we add private access modifier to a variable, then it will not allow to change the value once we initialize. We can add get and set properties to alter the values of private properties.
+
 * Typescript uses ES6.
 #### 3. What is Javascript?
 Java script is the language for web.
@@ -65,3 +67,16 @@ The angular directives helps us to manipulate the DOM. You can change a DOM elem
 
 #### 8. Angular Pipes
 The angular pipes are used to transform the data. We can pass arguments to pipe and chain pipes. Angular also allows to create custom pipes.
+
+#### 9. What is Angular component?
+Angular componenets are the bulding blocks of an angular application.They are used to cerate resuable UI elements that can be easiy composed together to form more complex interfaces. A component consits of 3 parts.i. Template ii. Class iii. Styles. Some common examples of components are Headers, Footers, Sidebars, Alerts, Forms, Tables, Lists etc.
+- AppComponent is a root component and we can have N number of componenets inside it.
+
+
+
+#### 10. Angular modules?
+A module in angular is a way of building the angular building blocks like components, directives, services and pipes together. To make a class as a module class, we need to decorate it with NgModule decorator. Every angular application must have at least one module file. In main.ts file, we we bootstrap AppModule. In app.module.ts file, we add all the components and other elements we are going to use in that module. Each module is independent and the components added in that module would be accessible only in thaat module.
+
+#### 10. Angular Templates? 
+A template is a piece of code that defines the user interface of your application. 
+
