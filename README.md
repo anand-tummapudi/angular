@@ -49,7 +49,11 @@ After your application instantiates a component or directive by calling its cons
 * ngOnDestroy() - clean up just before angular destroys the component or directive. Unsubscribe observables and detach event handlers to avoid memory leaks. Called immediately before angular destorys the directive or component.
 
 #### 6. What is Angular component?
-The componentis the main building block of angular application. Angular component is the combination of template(UI), class (properties+methods) and Meta data.
+
+Angular componenets are the bulding blocks of an angular application.They are used to cerate resuable UI elements that can be easiy composed together to form more complex interfaces. A component consits of 3 parts.i. Template ii. Class (properties+methods) and Meta data iii. Styles. Some common examples of components are Headers, Footers, Sidebars, Alerts, Forms, Tables, Lists etc.
+
+- AppComponent is a root component and we can have N number of componenets inside it.
+
 ![Angular Component](https://github.com/anand-tummapudi/angular/blob/main/assets/images/angular_component.JPG)
 
 ``` import {Component} from "@angular/core";
@@ -68,13 +72,7 @@ The angular directives helps us to manipulate the DOM. You can change a DOM elem
 #### 8. Angular Pipes
 The angular pipes are used to transform the data. We can pass arguments to pipe and chain pipes. Angular also allows to create custom pipes.
 
-#### 9. What is Angular component?
-Angular componenets are the bulding blocks of an angular application.They are used to cerate resuable UI elements that can be easiy composed together to form more complex interfaces. A component consits of 3 parts.i. Template ii. Class iii. Styles. Some common examples of components are Headers, Footers, Sidebars, Alerts, Forms, Tables, Lists etc.
-- AppComponent is a root component and we can have N number of componenets inside it.
-
-
-
-#### 10. Angular modules?
+#### 9. Angular modules?
 A module in angular is a way of building the angular building blocks like components, directives, services and pipes together. To make a class as a module class, we need to decorate it with NgModule decorator. Every angular application must have at least one module file. In main.ts file, we we bootstrap AppModule. In app.module.ts file, we add all the components and other elements we are going to use in that module. Each module is independent and the components added in that module would be accessible only in thaat module.
 
 #### 10. Angular Templates? 
